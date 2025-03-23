@@ -3,15 +3,53 @@
   <head>
     <title>Snake</title>
     <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        width: 100vw;
+      }
+
       canvas {
         border: 1px solid black;
       }
+
+      #screen {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+        gap: 10px;
+      }
+
+      header {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        text-align: center;
+        max-width: 500px;
+      }
+
+
      </style>
   </head>
   <body>
-    <h1>Snake Game</h1>
-    <canvas id="game-canvas" width="500" height="500"></canvas>
+    <main id="screen">
+      <header>
+        <h1>Snake Game</h1>
+        <h2 id="score">Score: 0</h2>
+      </header>
+      <canvas id="game-canvas" width="500" height="500"></canvas>
 
-    <script src="./snake.js"></script>
+      <script type="module" src="./main.js"></script>
+    </main>
   </body>
 </html>

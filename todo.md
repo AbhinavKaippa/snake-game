@@ -1,0 +1,2 @@
+- make is game over a method
+- move last time into model optional
